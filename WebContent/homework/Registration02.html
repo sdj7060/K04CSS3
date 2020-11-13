@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration01.html</title>
+    <style>
+        table {
+            border: 1px solid rgba(0, 0, 0, 0.349);
+            border-top: 2px solid rgba(0, 0, 255, 0.39);
+            padding: 25px;
+            padding-left: 70px;
+            width: 650px;
+            background-color: white;
+        }
+        table tr td:first-child {
+            font-weight: bold; width: 18%;
+            font-size: 12px; color: black;
+        }
+        table tr td:first-child:not(#non):before {
+            content: '* '; color: red;
+        }
+        #outT{
+            border:none;
+            background-color: rgba(0, 0, 0, 0.027);
+            margin-left: -70px;
+            margin-top: -45px;
+        }
+        #outT tr td:first-child {
+            font-size: 15px;
+            text-align: left;
+            width: 25%;  
+             
+        }
+        div {
+            text-align: right;
+            margin-top: -10px;
+            margin-bottom: 5px;
+        }
+        fieldset {
+            border: 1px solid rgba(0, 0, 0, 0.589);
+            padding: 10px; width: 650px;
+            background-color: rgba(0, 0, 0, 0.027);
+        }
+        #jusuk {
+            font-size: 10px;
+            color: gray;
+            font-weight: bold;
+        }
+        input {
+            border: 1px solid rgba(0, 0, 0, 0.253);
+            border-radius: 2px;
+            height: 27px;
+
+        }
+        #but1 {
+            background-color: #343434;
+            color: #ffffff;
+            font-size: 10px;
+            text-align: center;
+            width: 20%;
+            height: 31px;
+        }
+        #but1:hover {
+            background-color: #34343473;
+            color: #030303;
+        }
+        #but2 {
+            background-color: #ffffff00;
+            color: #000000;
+            font-size: 10px;
+            text-align: center;
+            width: 10%;
+            height: 31px;
+        }
+        #but2:focus{
+            background-color: #0f0d81bb;
+            color: #ffffff;
+        }
+        #tex1 {
+            width: 70%; 
+        }
+        #tex2 {
+            width: 30%; 
+        }
+        #tex3 {
+            width: 43%; 
+        }
+        #tex4 {
+            width: 25%;
+        }
+        #tex5 {
+            width: 20%;
+            height: 27px;
+        }
+        #tex6 {
+            width: 35%;
+        }
+        img{
+            margin-left: -6px; margin-bottom: -11px;
+        }
+        #tex7 {
+            width: 20%;
+            height: 31px;
+        }
+        
+    </style>
+</head>
+<body>
+    <fieldset>
+        <div id="jusuk"> *필수입력사항 </div>
+        <table cellspacing="15">
+            <tr>
+                <td>아이디</td>
+                <td>
+                    <input type="text" id="tex1">
+                    <input type="button" id="but1" value="중복확인">
+                </td>
+            </tr>
+            <tr>
+                <td id="non"></td>
+                <td id="jusuk">※3~15자의 영문과 숫자만 가능합니다.</td>
+            </tr>
+            <tr>
+                <td>비밀번호</td>
+                <td>
+                    <input type="text" id="tex1">
+                </td>
+            </tr>
+            <tr>
+                <td id="non"></td>
+                <td id="jusuk">
+                    ※영문/숫자/특수문자 조합 6~20자 이상 입력해주세요.(아이디/전화번호사용 불가)
+                    <br />
+                    ※1234**비밀번호는 홈페이지 사용에 제한됩니다.
+                </td>
+            </tr>
+            <tr>
+                <td>비밀번호 확인</td>
+                <td>
+                    <input type="text" id="tex1">
+                </td>
+            </tr>
+            <tr>
+                <td>이름</td>
+                <td>
+                    <input type="text" id="tex1">
+                    <input type="button" id="but2" value="여">
+                    <input type="button" id="but2" value="남">
+                </td>
+            </tr>
+            <tr>
+                <td>생년월일</td>
+                <td>
+                    <input type="text" placeholder="2019-05-20" id="tex6">
+                    <img src="./images/im1.PNG">
+                </td>
+            </tr>
+            <tr>
+                <td>주소</td>
+                <td>
+                    <input type="text" id="tex2">
+                    <input type="button" id="but1" value="우편번호찾기">
+                </td>
+            </tr>
+            <tr>
+                <td id="non"></td>
+                <td>
+                    <input type="text" id="tex3">
+                    <input type="text" id="tex3">
+                </td>
+            </tr>
+            <tr>
+                <td>이메일</td>
+                <td id="jusuk">
+                    <input type="text" id="tex4">
+                    @
+                    <input type="text" id="tex4">
+                    <select name="email" id="tex7">
+                        <option value="직접입력" selected="selected">직접입력</option>
+                        <option value="naver.com"">naver.com</option>
+                        <option value="daum.net">daum.net</option>
+                        <option value="nate.com">nate.com</option>
+                        <option value="gmail.com">gmail.com</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>휴대폰번호</td>
+                <td>
+                    <select name="phone" id="tex7">
+                        <option value="010" selected="selected">010</option>
+                        <option value="011">011</option>
+                        <option value="017">017</option>
+                        <option value="019">019</option>
+                        <option value="018">018</option>
+                    </select>
+                    -
+                    <input type="text" id="tex5">-
+                    <input type="text" id="tex5">
+                </td>
+            </tr>
+            <tr>
+                <td>전화번호</td>
+                <td>
+                    <select name="phone" id="tex7">
+                        <option value="070" selected="selected">070</option>
+                        <option value="02">02</option>
+                        <option value="032">032</option>
+                        <option value="031">031</option>
+                        <option value="016">016</option>
+                    </select>
+                    -
+                    <input type="text" id="tex5">-
+                    <input type="text" id="tex5">
+                </td>
+            </tr>
+            <tr>
+                <td>출판계약일</td>
+                <td>
+                    <input type="text" id="tex6">
+                    <img src="./images/im1.PNG">
+                </td>
+            </tr>
+            <tr>
+                <td>출판종료일</td>
+                <td>
+                    <input type="text" id="tex6">
+                    <img src="./images/im1.PNG">
+                </td>
+            </tr>
+            <tr>
+                <td>선택정보</td>
+                <td id="jusuk">
+                    <input type="checkbox" name="sel" value="one">자비출판&nbsp;&nbsp;
+                    <input type="checkbox" name="sel" value="two">반기획출판&nbsp;&nbsp;
+                    <input type="checkbox" name="sel" value="thr">프리미엄출판&nbsp;&nbsp;
+                    <input type="checkbox" name="sel" value="fou">출판컨설팅&nbsp;&nbsp;
+                    <br>
+                    <input type="checkbox" name="sel" value="fiv">기획출판&nbsp;&nbsp;
+                    <input type="checkbox" name="sel" value="six">미정&nbsp;&nbsp;
+                </td>
+            </tr>
+
+        </table>
+        <br/>
+        <div>
+            <table id="outT">
+                <tr>
+                    <td id="non">이용약관동의*</td>
+                    <td id="jusuk">선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할수 있습니다.</td>
+                </tr>
+            </table>
+        </div>
+        <table>
+            <tr>
+                <td id="non">
+                    <input type="checkbox" name="yes" value="AGR">전체동의<br>
+                </td>
+            </tr>
+            <tr>
+                <td id="non">
+                    <input type="checkbox" name="222" value="222">이용약관<br>
+                    <input type="checkbox" name="333" value="333">개인정보처리방침<br>
+                    <input type="checkbox" name="444" value="444">이벤트 및 해택 알림 수신<br>
+                </td>
+            </tr>
+            <tr>
+                <td id="non">
+                    <input type="checkbox" name="SMS" value="SMS">SMS
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="emali" value="EML">이메일
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+</body>
+</html>

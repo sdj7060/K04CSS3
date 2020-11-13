@@ -15,8 +15,7 @@
         }
 
         .gbut{ 
-            height:25% ; background-color: #70C738; font-size: 40px; font-weight: bold; 
-            text-align: right; color: black; padding: 20px;
+            height:25% ;  padding: 20px;
         }
         
         input {
@@ -34,42 +33,48 @@
         .obut input {
             background-color: #FA960A; 
         }
-
+        #window {
+            height: 78px;  background-color: #70C738; font-size: 60px; font-weight: bold; 
+            text-align: right; color: black; padding: 20px; margin: -20px; 
+        }
     </style>
 </head>
 <body>
-    <table cellspacing='7'>
-        <tr>
-            <td class="gbut" colspan="4">123+645</td>
-        </tr>
-        <tr>
-            <td class="grabut" colspan="2"><input type=button value="BackSpace"></td>
-            <td class="grabut" colspan="2"><input type=button value="C"></td>
-        </tr>
-        <tr>
-            <td><input type=button value="1"></td>
-            <td><input type=button value="2"></td>
-            <td><input type=button value="3"></td>
-            <td class="obut"><input type=button value="/"></td>
-        </tr>
-        <tr>
-            <td><input type=button value="4"></td>
-            <td><input type=button value="5"></td>
-            <td><input type=button value="6"></td>
-            <td class="obut"><input type=button value="x"></td>
-        </tr>
-        <tr>
-            <td><input type=button value="7"></td>
-            <td><input type=button value="8"></td>
-            <td><input type=button value="9"></td>
-            <td class="obut"><input type=button value="+"></td>
-        </tr>
-        <tr>
-            <td><input type=button value="="></td>
-            <td><input type=button value="0"></td>
-            <td><input type=button value="."></td>
-            <td class="obut"><input type=button value="-"></td>
-        </tr>
-    </table>
+    <form action="">
+        <table cellspacing='7'>
+            <tr>
+                <td class="gbut" colspan="4">
+                    <input type="text" id="window"></td>
+            </tr>
+            <tr>
+                <td class="grabut" colspan="2"><input type=button value="BackSpace"></td>
+                <td class="grabut" colspan="2"><input type=button value="C"></td>
+            </tr>
+            <tr>
+                <td><input type=button value="1"></td>
+                <td><input type=button value="2"></td>
+                <td><input type=button value="3"></td>
+                <td class="obut"><input type=button value="/"></td>
+            </tr>
+            <tr>
+                <td><input type=button value="4"></td>
+                <td><input type=button value="5"></td>
+                <td><input type=button value="6"></td>
+                <td class="obut"><input type=button value="x"></td>
+            </tr>
+            <tr>
+                <td><input type=button value="7"></td>
+                <td><input type=button value="8"></td>
+                <td><input type=button value="9"></td>
+                <td class="obut"><input type=button value="+"></td>
+            </tr>
+            <tr>
+                <td><input type=button value="="></td>
+                <td><input type=button value="0"></td>
+                <td><input type=button value="."></td>
+                <td class="obut"><input type=button value="-"></td>
+            </tr>
+        </table>
+    </form>
 </body>
 </html>
